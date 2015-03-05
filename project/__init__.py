@@ -19,7 +19,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 ################
 
 app = Flask(__name__, static_folder='static')
-app.config.from_object(os.environ['APP_SETTINGS'])
+app.config.from_object("project.config.ProductionConfig")
 
 
 ####################
